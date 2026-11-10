@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 7</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #wrapper {
+            width: 220px;
+            padding: 5px;
+            border: 2px solid #000;
+            box-shadow: -10px 10px 12px #ccc;
+            position: relative;
+            margin: 35px 20px;
+        }
+
+        #wrapper::before {
+            content: "wrapper";
+            position: absolute;
+            top: -24px;
+            left: 0;
+            font-size: 16px;
+        }
+
+        header {
+            height: 42px;
+            border: 2px solid #000;
+            margin-bottom: 5px;
+            padding: 8px;
+        }
+
+        nav {
+            width: 40px;
+            height: 190px;
+            border: 2px solid #000;
+            padding: 8px 5px;
+        }
+
+        main {
+            flex: 1;
+            height: 190px;
+            border: 2px solid #000;
+            padding: 8px;
+        }
+
+        #wrapper > div {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            height: 35px;
+            border: 2px solid #000;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header>header</header>
+
+        <div>
+            <nav>nav</nav>
+            <main>main</main>
+        </div>
+
+        <footer>footer</footer>
+    </div>
+
+</body>
+</html>

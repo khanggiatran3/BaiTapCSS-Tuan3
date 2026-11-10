@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6 - My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .portfolio {
+            width: 600px;
+            max-width: 100%;
+            margin: 15px auto;
+            padding: 20px 10px 30px;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            margin: 0 0 35px;
+            font-size: 22px;
+            color: #111;
+        }
+
+        .list-tab {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 40px;
+        }
+
+        .list-tab li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .list-tab a {
+            color: #222;
+            text-decoration: none;
+            font-size: 11px;
+        }
+
+        .list-tab li:first-child a {
+            color: #36a6a6;
+        }
+
+        .galerry {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 8px;
+        }
+
+        .galerry li {
+            width: 32%;
+        }
+
+        .galerry a {
+            display: block;
+        }
+
+        .galerry img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="portfolio">
+        <h2>MY PORTFOLIO</h2>
+
+        <ul class="list-tab">
+            <li><a href="./">All</a></li>
+            <li><a href="./">Web App</a></li>
+            <li><a href="./">UI/UX</a></li>
+            <li><a href="./">Graphics Design</a></li>
+            <li><a href="./">Mobile App</a></li>
+            <li><a href="./">Branding</a></li>
+            <li><a href="./">Marketing</a></li>
+        </ul>
+
+        <ul class="galerry">
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 1"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 2"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 3"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 4"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 5"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 6"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 7"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 8"></a></li>
+            <li><a href="./"><img src="images/portfolio.png" alt="Portfolio 9"></a></li>
+        </ul>
+    </section>
+
+</body>
+</html>

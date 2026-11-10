@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 9 - Font Awesome</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        .icon-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .icon-item {
+            width: 110px;
+            padding: 20px 10px;
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .icon-item:hover {
+            background-color: #dceeff;
+            transform: translateY(-5px);
+        }
+
+        .icon-item i {
+            font-size: 35px;
+            color: #3498db;
+            margin-bottom: 12px;
+        }
+
+        .icon-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .social-icons {
+            margin-top: 40px;
+        }
+
+        .social-icons h2 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 12px;
+            font-size: 30px;
+            color: #555;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #3498db;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>FONT AWESOME ICONS</h1>
+        <p class="description">Sử dụng thư viện Font Awesome để hiển thị biểu tượng</p>
+
+        <div class="icon-list">
+
+            <div class="icon-item">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-user"></i>
+                <p>User</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Email</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-heart"></i>
+                <p>Favorite</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-gear"></i>
+                <p>Settings</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-camera"></i>
+                <p>Camera</p>
+            </div>
+
+        </div>
+
+        <div class="social-icons">
+            <h2>Social Media</h2>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
